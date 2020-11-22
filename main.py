@@ -28,7 +28,7 @@ class Example(QMainWindow):
             qp = QPainter()
             qp.begin(self)
             s = random.randint(20, 110)
-            qp.setBrush(QColor(255, 255, 255))
+            qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
             qp.drawEllipse(self.mouse_x - s // 2, self.mouse_y - s // 2, s, s)
             qp.end()
 
